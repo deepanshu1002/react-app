@@ -108,37 +108,41 @@ const Body = () => {
       {editBox.visible && (
         <div className="w-1/5  h-1/2 m-auto left-0 right-0 top-0 bottom-0 px-2 pt-12 absolute bg-black bg-opacity-60 ">
           <form onSubmit={(e) => handleSubmit(e)}>
-            <label className="text-white" htmlFor="name">
+            <label className="text-white mt-1" htmlFor="name">
               Name :
             </label>
             <input
               ref={name}
-              className="border-[1px]"
+              className="border-[1px] mt-1 w-62"
               id="name"
               type="text"
               placeholder="name"
               defaultValue={editBox.editData.name}
             />
-            <label htmlFor="email">Email :</label>
+            <label className="text-white mt-1" htmlFor="email">
+              Email :
+            </label>
             <input
               ref={email}
-              className="border-[1px]"
+              className="border-[1px] mt-1 w-62"
               id="email"
               type="text"
               placeholder="email"
               defaultValue={editBox.editData.email}
             />
-            <label htmlFor="role">Role :</label>
+            <label className="text-white mt-1" htmlFor="role">
+              Role :
+            </label>
             <input
               ref={role}
-              className="border-[1px]"
+              className="border-[1px] mt-1 w-62"
               id="role"
               type="text"
               placeholder="role"
               defaultValue={editBox.editData.role}
             />
             <button
-              className="mt-2 px-3 py-2 text-white border-2 "
+              className="mt-3 px-3 py-2 text-white border-2  "
               type="submit"
             >
               Submit
